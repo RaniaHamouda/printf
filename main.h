@@ -9,7 +9,7 @@
 int _printf(const char *format, ...);
 int _putchar(int c);
 int print(char len,...);
-
+int str(char *s);
 
 
 #endif
