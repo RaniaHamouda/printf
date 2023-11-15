@@ -12,23 +12,34 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	int i = 0;
+	int x;
+
+	int y;
 
 	while (*format != '\0')
 	{
-		if (*format == '%')
+	if (*format == '%')
 		{
-			i += _print_format(*(++format), aegs);
+	format++; /*move to the next character after '%'*/
+	switch (*format)
+		{
+	case 'd':
+		y = va_arg(args, int);
+
+		x += y;
+
+		break;
+		}
 		}
 		else
 		{
-			i += write(1, format, 1);
+			_putchar(*format);
 		}
 
 		format++;
 	}
 
-		va_end(args);
+			va_end(args);
 
-	return (i);
+		return (x);
 }
