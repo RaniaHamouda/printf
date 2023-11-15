@@ -10,11 +10,9 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 
+	int x, y;
+
 	va_start(args, format);
-
-	int x;
-
-	int y;
 
 	while (*format != '\0')
 	{
