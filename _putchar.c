@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _putchar - putchar
  * Return: number of characters printed
