@@ -13,4 +13,5 @@ int print(char len, ...);
 int str(char *s);
 int print_char(va_list types, char buffer[],
 int flags, int width, int precision, int size);
+int _printf_car(int c);
 #endif

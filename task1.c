@@ -17,7 +17,7 @@ int print(char len, ...)
 		for (i = 0 ; i < len ; i++)
 		{
 			ptr = va_arg(list, char *);
-		_putchar("[%d, %i]", ptr, ptr);
+		_printf("[%d, %i]", ptr, ptr);
 		}
 	va_end(list);
 }
